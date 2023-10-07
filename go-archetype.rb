@@ -5,20 +5,20 @@
 class GoArchetype < Formula
   desc ""
   homepage "https://github.com/rantav/go-archetype"
-  version "0.1.20"
+  version "0.1.21"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/save-vi/go-archetype/releases/download/v0.1.20/go-archetype_Darwin_x86_64.tar.gz"
-      sha256 "e7144c60479ff3226a96bdcecebf16333a6eff46b2898399580eb3d0eb29a21c"
+      url "https://github.com/save-vi/go-archetype/releases/download/v0.1.21/go-archetype_ 0.1.21_osx_x86_64.tar.gz"
+      sha256 "3de92880f69a672c418cfc53eea2256362fc55ec7b23e365a7b12e55836f65ff"
 
       def install
         bin.install "go-archetype"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/save-vi/go-archetype/releases/download/v0.1.20/go-archetype_Darwin_arm64.tar.gz"
-      sha256 "3605c6e60e220150dc45818de273a2d47b61a6ee8cc55f921a5f7e5a7e68ee2e"
+      url "https://github.com/save-vi/go-archetype/releases/download/v0.1.21/go-archetype_ 0.1.21_osx_arm64.tar.gz"
+      sha256 "18df50e870b22ac2a79d84a0a518881f5ec435b815e007158eec6fc26dce0eaa"
 
       def install
         bin.install "go-archetype"
@@ -27,17 +27,17 @@ class GoArchetype < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/save-vi/go-archetype/releases/download/v0.1.20/go-archetype_Linux_arm64.tar.gz"
-      sha256 "9b34281f88242b711156fb9202a55a44928e7bd851b39602672bb3f05b118fc2"
+    if Hardware::CPU.intel?
+      url "https://github.com/save-vi/go-archetype/releases/download/v0.1.21/go-archetype_ 0.1.21_linux_x86_64.tar.gz"
+      sha256 "8768463bf1780c948be286597395d2a11d34621372d24175a8632e3075090aed"
 
       def install
         bin.install "go-archetype"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/save-vi/go-archetype/releases/download/v0.1.20/go-archetype_Linux_x86_64.tar.gz"
-      sha256 "531ac9bd8b206532549a799d1ebeed1ef0c36eaa6c625a64d1e52bcd511e0c18"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/save-vi/go-archetype/releases/download/v0.1.21/go-archetype_ 0.1.21_linux_arm64.tar.gz"
+      sha256 "6eefb8115390f010b4f0a03e2d6c18fd3d4488888de94b0434ef20c4b0ea4793"
 
       def install
         bin.install "go-archetype"
